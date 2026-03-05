@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>David García — Mobile Developer</title>
+    <meta
+      name="description"
+      content="Senior Mobile Developer specializing in Android, iOS, and Flutter. 18+ years of software engineering experience."
+    />
+    <meta
+      name="keywords"
+      content="mobile developer, android developer, iOS developer, flutter, kotlin, swift, jetpack compose, senior engineer"
+    />
+    <meta name="author" content="David García" />
+    <link rel="canonical" href="https://daangar.github.io/" />
+
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://daangar.github.io/" />
+    <meta property="og:title" content="David García — Mobile Developer" />
+    <meta
+      property="og:description"
+      content="Senior Mobile Engineer building scalable Android and cross-platform apps."
+    />
+    <meta
+      property="og:image"
+      content="https://daangar.github.io/images/og-image.jpg"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="David García — Mobile Developer" />
+    <meta
+      name="twitter:description"
+      content="Senior Mobile Engineer building scalable Android and cross-platform apps."
+    />
+    <meta
+      name="twitter:image"
+      content="https://daangar.github.io/images/og-image.jpg"
+    />
+
+    <!-- Inline SVG favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%2322D3EE'/%3E%3Ctext x='50' y='68' font-family='Inter,sans-serif' font-size='46' font-weight='700' text-anchor='middle' fill='%230A0F1C'%3EDG%3C/text%3E%3C/svg%3E"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Skip navigation link for keyboard users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ── Navigation ─────────────────────────────────────────── -->
+    <header class="nav" id="nav" role="banner">
+      <div class="nav__inner">
+        <!-- Logo -->
+        <a href="#" class="nav__logo" aria-label="David García — back to top">
+          <span class="logo-mark" aria-hidden="true">DG</span>
+          <span class="nav__logo-name">David García</span>
+        </a>
+
+        <!-- Desktop links -->
+        <nav class="nav__links" aria-label="Main navigation">
+          <a href="#projects" class="nav__link" data-i18n="nav.links.0"
+            >Projects</a
+          >
+          <a href="#techstack" class="nav__link" data-i18n="nav.links.1"
+            >Tech Stack</a
+          >
+          <a href="#about" class="nav__link" data-i18n="nav.links.2">About</a>
+        </nav>
+
+        <!-- Desktop actions -->
+        <div class="nav__actions">
+          <div class="lang-toggle" role="group" aria-label="Language selector">
+            <button class="lang-toggle__btn" data-lang="en" aria-pressed="true">
+              EN
+            </button>
+            <button
+              class="lang-toggle__btn"
+              data-lang="es"
+              aria-pressed="false"
+            >
+              ES
+            </button>
+          </div>
+          <a
+            href="#contact"
+            class="btn btn--primary btn--sm"
+            data-i18n="nav.contact"
+            >Contact</a
+          >
+        </div>
+
+        <!-- Mobile: lang toggle + hamburger -->
+        <div class="nav__mobile-actions">
+          <div
+            class="lang-toggle lang-toggle--mobile"
+            role="group"
+            aria-label="Language selector"
+          >
+            <button class="lang-toggle__btn" data-lang="en" aria-pressed="true">
+              EN
+            </button>
+            <button
+              class="lang-toggle__btn"
+              data-lang="es"
+              aria-pressed="false"
+            >
+              ES
+            </button>
+          </div>
+          <button
+            class="nav__hamburger"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile dropdown menu -->
+      <div class="nav__mobile-menu" id="mobile-menu" hidden>
+        <nav aria-label="Mobile navigation">
+          <a href="#projects" class="nav__mobile-link" data-i18n="nav.links.0"
+            >Projects</a
+          >
+          <a href="#techstack" class="nav__mobile-link" data-i18n="nav.links.1"
+            >Tech Stack</a
+          >
+          <a href="#about" class="nav__mobile-link" data-i18n="nav.links.2"
+            >About</a
+          >
+          <a href="#contact" class="nav__mobile-link" data-i18n="nav.contact"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- ── Main ───────────────────────────────────────────────── -->
+    <main id="main-content">
+      <!-- Hero -->
+      <section class="hero" id="hero" aria-label="Introduction">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <!-- Available badge -->
+            <div class="hero__badge">
+              <span class="hero__badge-dot" aria-hidden="true"></span>
+              <span data-i18n="hero.badge">Available for new projects</span>
+            </div>
+
+            <!-- Headline -->
+            <div class="hero__headline">
+              <h1 class="hero__name" data-i18n="hero.name">David García</h1>
+              <span class="hero__role" data-i18n="hero.role"
+                >Mobile Developer</span
+              >
+            </div>
+
+            <!-- Sub -->
+            <p class="hero__sub" id="hero-sub">
+              Senior Mobile Engineer building scalable Android<br />and
+              cross-platform apps.
+            </p>
+
+            <!-- Tech chips -->
+            <div class="hero__chips" aria-label="Key technologies">
+              <span class="chip">Kotlin</span>
+              <span class="chip">Jetpack Compose</span>
+              <span class="chip">SwiftUI</span>
+              <span class="chip">Flutter</span>
+            </div>
+
+            <!-- CTAs -->
+            <div class="hero__ctas">
+              <a
+                href="#projects"
+                class="btn btn--primary btn--lg"
+                data-i18n="hero.cta_primary"
+                >View Projects</a
+              >
+              <a
+                href="#contact"
+                class="btn btn--secondary btn--lg"
+                data-i18n="hero.cta_secondary"
+                >Contact</a
+              >
+            </div>
+          </div>
+
+          <!-- Hero image -->
+          <div class="hero__image" aria-hidden="true">
+            <!--
+            REPLACE: swap src with your own photo or keep the Unsplash placeholder.
+            Recommended size: 1040×1240 px (2× for retina).
+          -->
+            <img
+              src="https://images.unsplash.com/photo-1599837565318-67429bde7162?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+              alt=""
+              width="520"
+              height="620"
+              loading="eager"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="projects" id="projects" aria-label="Featured projects">
+        <div class="projects__inner">
+          <header class="projects__header">
+            <span class="section-tag" data-i18n="projects.tag"
+              >FEATURED WORK</span
+            >
+            <h2 class="section-title" data-i18n="projects.title">Projects</h2>
+            <p class="section-sub" data-i18n="projects.sub">
+              Engineering work across Android, iOS, and cross-platform mobile.
+            </p>
+          </header>
+
+          <!-- Filter buttons (rendered by JS) -->
+          <div
+            class="projects__filters"
+            role="group"
+            aria-label="Filter projects by technology"
+          ></div>
+
+          <!-- Project cards (rendered by JS) -->
+          <div
+            class="projects__grid"
+            id="projects-grid"
+            aria-live="polite"
+            aria-label="Projects list"
+          ></div>
+        </div>
+      </section>
+
+      <!-- Tech Stack -->
+      <section class="techstack" id="techstack" aria-label="Technical skills">
+        <div class="techstack__inner">
+          <span class="section-tag" data-i18n="techstack.tag">TECH STACK</span>
+          <h2 class="section-title" data-i18n="techstack.title">
+            Tools of the trade
+          </h2>
+          <!-- Groups rendered by JS -->
+          <div class="techstack__groups" id="techstack-groups"></div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about" id="about" aria-label="About David García">
+        <div class="about__inner">
+          <div class="about__content">
+            <span class="section-tag" data-i18n="about.tag">ABOUT</span>
+            <h2 class="about__title">
+              <span data-i18n="about.title_line1">18 years building</span><br />
+              <span data-i18n="about.title_line2">for mobile.</span>
+            </h2>
+            <p class="about__body" data-i18n="about.body">
+              Mobile Developer with 18 years of software engineering experience,
+              including 8 years focused on mobile platforms. I build scalable
+              Android and cross-platform applications with a strong focus on
+              clean architecture, testing, and maintainability.
+            </p>
+            <!-- Stats rendered by JS -->
+            <div class="about__stats" id="about-stats"></div>
+          </div>
+
+          <div class="about__image" aria-hidden="true">
+            <!--
+            REPLACE: swap with your own workspace/code photo.
+            Recommended size: 880×800 px (2× for retina).
+          -->
+            <img
+              src="https://images.unsplash.com/photo-1566837945700-30057527ade0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+              alt=""
+              width="440"
+              height="400"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact" id="contact" aria-label="Contact David García">
+        <div class="contact__inner">
+          <span class="section-tag" data-i18n="contact.tag">CONTACT</span>
+
+          <div class="contact__headline">
+            <h2 class="contact__h1" data-i18n="contact.title1">
+              Let's build something
+            </h2>
+            <span class="contact__h2" data-i18n="contact.title2"
+              >great together.</span
+            >
+          </div>
+
+          <p class="contact__sub" data-i18n="contact.sub">
+            Open to senior mobile engineering roles and freelance projects.
+          </p>
+
+          <div class="contact__btns">
+            <!--
+            Copy-email button: hidden by default.
+            Set EMAIL in js/app.js to enable it.
+          -->
+            <button
+              class="btn btn--primary btn--lg"
+              id="copy-email-btn"
+              data-i18n="contact.email_btn"
+              aria-label="Copy email address to clipboard"
+              hidden
+            >
+              Copy email
+            </button>
+
+            <a
+              href="https://www.linkedin.com/in/davidgarciarivas"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--outline btn--lg"
+              data-i18n="contact.linkedin_btn"
+              >Open LinkedIn</a
+            >
+          </div>
+
+          <div class="contact__info">
+            <a
+              href="https://www.linkedin.com/in/davidgarciarivas"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact__info-link"
+              data-i18n="contact.linkedin_url"
+              >LinkedIn.com/in/davidgarciarivas</a
+            >
+            <!-- Email shown here if EMAIL is set in app.js -->
+            <span class="contact__info-text" id="email-display"></span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ── Footer ─────────────────────────────────────────────── -->
+    <footer class="footer" role="contentinfo">
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <span class="logo-mark" aria-hidden="true">DG</span>
+          <span class="footer__name">David García</span>
+        </div>
+        <p class="footer__copy" data-i18n="footer.copy">
+          © 2025 David García · Senior Mobile Developer
+        </p>
+      </div>
+    </footer>
+
+    <!-- Toast notification (aria-live for screen readers) -->
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
